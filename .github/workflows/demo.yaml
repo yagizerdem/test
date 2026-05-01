@@ -1,0 +1,11 @@
+name: "first workflow"
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - echo "hit the build job"
+      - echo > build.txt
