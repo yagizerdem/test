@@ -7,5 +7,8 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - echo "hit the build job"
-      - echo > build.txt
+      - name: "build step 1"
+        run: echo "hit the build job"
+
+      - name: "build step 2"
+        run: echo > build.txt
