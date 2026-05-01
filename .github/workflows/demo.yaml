@@ -11,4 +11,4 @@ jobs:
         run: echo "hit the build job"
 
       - name: "build step 2"
-        run: echo > build.txt
+        run: echo 'build output > build.txt
