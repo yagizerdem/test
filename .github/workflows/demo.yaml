@@ -26,3 +26,4 @@ jobs:
     name: "this is a test job to check the temp file builds inside github actions and can seen in repo"
     steps:
       - run: echo "this is a temp file" > test.txt
+      - run: echo "display commit sha $GITHUB_SHA"
