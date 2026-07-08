@@ -2,6 +2,8 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
+env:
+  DAY_OF_WEEK: Monday
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -27,3 +29,6 @@ jobs:
     steps:
       - run: echo "this is a temp file" > test.txt
       - run: echo "display commit sha $GITHUB_SHA"
+      - run: echo "node version var " $NODE_VERSION
+      - run: echo "node version var " ${{ env.NODE_VERSION }}
+      - run: echo "node version var " ${{ vars.NODE_VERSION  }}
