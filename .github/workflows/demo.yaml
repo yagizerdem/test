@@ -21,3 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo this is test job
+  Build_File_Job:
+    runs-on: ubuntu-latest
+    name: "this is a test job to check the temp file builds inside github actions and can seen in repo"
+    steps:
+      - run: echo "this is a temp file" > test.txt
