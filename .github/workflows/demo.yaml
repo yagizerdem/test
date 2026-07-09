@@ -15,10 +15,10 @@ jobs:
       - name: Build image
         run: |
           docker build . \
-            -t ghcr.io/mert2m/${{ github.event.repository.name }}:latest \
-            -t ghcr.io/mert2m/${{ github.event.repository.name }}:${{ github.ref_name }}
+            -t ghcr.io/yagizerdem/${{ github.event.repository.name }}:latest \
+            -t ghcr.io/yagizerdem/${{ github.event.repository.name }}:${{ github.ref_name }}
 
       - name: Push image
         run: |
-          docker push ghcr.io/mert2m/${{ github.event.repository.name }}:latest
-          docker push ghcr.io/mert2m/${{ github.event.repository.name }}:${{ github.ref_name }}
+          docker push ghcr.io/yagizerdem/${{ github.event.repository.name }}:latest
+          docker push ghcr.io/yagizerdem/${{ github.event.repository.name }}:${{ github.ref_name }}
